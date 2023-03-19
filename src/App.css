@@ -1,0 +1,87 @@
+
+header a {
+text-decoration: auto;
+color: inherit;
+}
+  
+header img {
+height: 1em;
+width: 1em;
+background-color: transparent;
+}
+
+header{
+animation: 1.5s ease-out 0s 1 slideInTop-head;
+}
+  
+@keyframes slideInTop-head {
+0% {
+    transform: translateY(-150%);
+}
+100% {
+    transform: translateY(0);
+}
+}
+  
+.App-header {
+background-color: #b6b6b694;
+width: 100vw;
+height: 2em;
+font-size: calc(10px + 2vmin);
+color: white;
+display: flex;
+gap: .5em;
+position: fixed;
+box-shadow: 0 0 5px 4px #373825;
+font-weight: bold;
+z-index: 1;
+}
+
+.tabs{
+background-color: #4a4242;
+text-align: center;
+height: 100vh;
+}
+
+.info{
+    display: flex;
+    color: #faf7f4;
+    font-family: monospace;
+    justify-content: center;
+    font-size: 3em;
+    align-items: center;
+    height: 100vh;
+}
+  
+nav{
+display: flex;
+flex-direction: row;
+}
+
+@media screen and (min-width:80em) {
+.App-header {
+    flex-flow: row-reverse;
+    align-items: center;
+}
+#nav-menu{
+    padding-right: 1em;
+    width: 60vw;
+    justify-content: space-around;
+}
+header nav:nth-of-type(2){
+    gap: 2em;
+}
+header nav nav{
+    gap: 0.5em;
+}
+.scale{
+    transition: transform .2s;
+}
+.scale:hover{
+    transform: scale(1.3);
+}
+}
+  
+
+  
+  
